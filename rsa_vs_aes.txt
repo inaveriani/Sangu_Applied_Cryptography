@@ -1,0 +1,25 @@
+RSA vs. AES:
+
+RSA (Rivest-Shamir-Adleman):
+- Asymmetric encryption: Uses a public key for encryption and a private key for decryption.
+- Slower than AES, especially for large data.
+- Primarily used for key exchange and digital signatures.
+- Higher key sizes (e.g., 2048 bits) provide stronger security.
+- More computationally intensive.
+
+AES (Advanced Encryption Standard):
+- Symmetric encryption: Uses the same key for encryption and decryption.
+- Much faster than RSA, suitable for encrypting large amounts of data.
+- Commonly used for data encryption, file encryption, and network security.
+- Key sizes of 128, 192, or 256 bits.
+- Less computationally intensive than RSA.
+
+Use-Case Differences:
+
+- RSA is typically used for securely exchanging symmetric keys (like AES keys) or for digital signatures where verifying the origin of the data is important.
+- AES is used for encrypting large amounts of data efficiently, such as files, databases, or network traffic.
+
+Performance Differences:
+- AES is significantly faster than RSA for encryption and decryption.
+- RSA's performance degrades as the data size increases, whereas AES maintains consistent performance.
+- Because RSA is slow, it is not practical for encrypting large data sets.
