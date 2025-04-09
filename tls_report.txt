@@ -1,0 +1,70 @@
+﻿1. Client Hello
+Packet 260
+Source: 192.168.100.107 (your machine)
+Destination: 164.92.249.67 (ums.sangu.edu.ge)
+TLS Version: TLS 1.2
+Info: Client Hello (SNI=ums.sangu.edu.ge)
+This begins the TLS handshake
+Includes supported cipher suites, random number, and the SNI (Server Name Indication)
+
+2. Server Hello and Certificate
+Packets 308–310
+From: 164.92.249.67 to 192.168.100.107
+Contains:
+	Server Hello
+	Certificate
+	Server Key Exchange
+
+3. Client Key Exchange + Finished
+Packets 318–321
+From: 192.168.100.107 to 164.92.249.67
+Contains:
+	Client Key Exchange
+	Change Cipher Spec
+	Encrypted Handshake Message
+
+4. Server Finished
+Packets 322–324
+From: 164.92.249.67 to client
+Includes:
+	New Session Ticket
+	Change Cipher Spec
+	Encrypted Handshake Message
+
+
+ Security Implications of This Handshake
+
+Client Hello - Initiates handshake, lists supported cipher suites, includes a random number
+Server Hello - Server selects cipher suite, sends its certificate (authenticity)
+Certificate - Enables client to verify server's identity via CA
+Key Exchange - Securely exchanges pre-master key, forms the basis of symmetric encryption 
+Change Cipher Spec - Signals switch from plaintext to encrypted communication
+Finished (Encrypted) - Ensures handshake integrity (both client and server prove they know the shared secret)
+
+TLS Protection Against MITM (As Seen Here)
+Certificate from Trusted CA:
+   Verified by the client to ensure authenticity.
+   Prevents MITM from impersonating server unless they have a valid certificate.
+Public Key Encryption:
+   Ensures key exchange is secure even if MITM observes the handshake.
+MAC & Encryption:
+   Application data is encrypted and protected from tampering.
+
+
+HTTPS is simply the HTTP protocol operating over a secure TLS (or SSL) connection. TLS provides the security 
+layer underneath the application protocol (HTTP). It ensures:  
+   Confidentiality: The encryption negotiated during the handshake (using the derived session keys) 
+   prevents eavesdroppers (like someone on the same Wi-Fi network or an ISP) from reading the content 
+   of your communication (e.g., login credentials, pages visited, data submitted).  
+
+   Integrity: The message authentication ensures that the data exchanged between your browser and the server 
+   has not been tampered with or altered during transit. You can be sure the web page you receive is the one the 
+   server sent, and the data you submit arrives unchanged. 
+
+   Authentication: The server certificate verification assures you that you are communicating with the genuine 
+   ums.sangu.edu.ge server, not an imposter site set up by an attacker (protecting against MITM and phishing related 
+   to fake websites).
+
+In essence, TLS creates a secure, private "tunnel" between your browser and the web server, protecting the HTTP 
+traffic flowing within it. When you see https:// and the padlock icon in your browser, it signifies that these TLS 
+protections are active for your connection to that site.
