@@ -1,0 +1,91 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=ums.sangu.edu.ge
+   i:C=US, O=Let's Encrypt, CN=R11
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Feb 16 02:46:46 2025 GMT; NotAfter: May 17 02:46:45 2025 GMT
+ 1 s:C=US, O=Let's Encrypt, CN=R11
+   i:C=US, O=Internet Security Research Group, CN=ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIE8TCCA9mgAwIBAgISA4DVgtT/Gn8ZBfO6iPmmdl/eMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjUwMjE2MDI0NjQ2WhcNMjUwNTE3MDI0NjQ1WjAbMRkwFwYDVQQD
+ExB1bXMuc2FuZ3UuZWR1LmdlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAulgRD9B9zKZaDOEPkWgiV9coaPxFh8toawB/8EkEXurCnlrMsz6pqicFUE+K
+RV9C9c3Drzzgu9bFfc+95yazaFmwHKOMp1fOmX+d4EpuJYU/um9H+rFfeaQzo1Zn
+5IoQkt9vT77acmE8sudKAna/vzAU4jI5hbfzf1GffRpVTjQWv938dXks09+2w0U1
+AGMkCAvM3AiVAdk3ppd/L1U7oUiJzXw9PGrGcPxV3yUPh+s27LTeKI/fU3+p4tBp
+ZmnPfNpMGtsria86/byfUWEZkzAIlc/i11xG7KGOcKwHiXjKv1elhbbyKq028J7m
+olqb2oLIbrajD+xFJfSPiwCBUQIDAQABo4ICFTCCAhEwDgYDVR0PAQH/BAQDAgWg
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0G
+A1UdDgQWBBTlIqdlAGNpvEh19OpvofYnlCqlsDAfBgNVHSMEGDAWgBTFz0ak6vTD
+wHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGGFmh0dHA6
+Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTEuaS5sZW5j
+ci5vcmcvMBsGA1UdEQQUMBKCEHVtcy5zYW5ndS5lZHUuZ2UwEwYDVR0gBAwwCjAI
+BgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgCi4wrkRe+9rZt+OO1H
+Z3dT14JbhJTXK14bLMS5UKRH5wAAAZUM3ESWAAAEAwBHMEUCIBGH9yd4ci68D3Zu
+6f9fvTE0FemalN8piU7XJ/xQqacWAiEArOVqGC8GuZQIIp+gg3d2eTg5DRBXS/fp
+7aAUFqjKkmEAdwBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAZUM
+3ESKAAAEAwBIMEYCIQDJ4bC1zu0cEmm7PJFXtZsBLqjcGUnAu7xy1NnK4aic7QIh
+AIXKGYsWuE9mWu3GntqQqCSL2cXXUlj7B6HpT2lCBRbCMA0GCSqGSIb3DQEBCwUA
+A4IBAQCwzeUv9GKraA9QaoJfTZvXYwV/ddJKAgq4CY5zemGNW+qe8FoSZiDOTJza
+7th60sQWRDAit2cZI1rmGUSIcdmfk0+wRdC/V5A6w5hvJYcukrjgdCvfQBKk15hD
+Zi3Wru7lapYa0csMMWceJNqnfo2rEih7bs9DYPBEMbn9ARd4pSbS3MVKDFDgO2ia
+/OsHxNQVIPI79It5ZGlMoRUmOwAtWgzS2cuEss9unnH2hjY7bboG+ht69vCbmV4N
+CjuUzcgDJUSyFOQ7zSuKfaDt4v3si2qnNG4QezJHdMwZkXQX76uCfNlbYRPiFpMu
+w8OUHQzKXLBCnUigt5zQuJXkfgH9
+-----END CERTIFICATE-----
+subject=CN=ums.sangu.edu.ge
+issuer=C=US, O=Let's Encrypt, CN=R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3231 bytes and written 548 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-CHACHA20-POLY1305
+Protocol: TLSv1.2
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-CHACHA20-POLY1305
+    Session-ID: 3AEE9B2976CF84AD562F93669B54DE4060254EDBAB93D73293B37019C214586E
+    Session-ID-ctx: 
+    Master-Key: 31A3C5394F0967A6C3258D3EEF32540E8A1709177B7F4FFBD81BD8F4544FBE84AE32DE14ACAEAA2767F823DF6F2ECFF0
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - f5 f2 eb 68 f0 41 53 4b-3b 4b 25 fd 8b 5b 69 db   ...h.ASK;K%..[i.
+    0010 - 92 3c 39 9f 4e 96 2b ee-ac 4f 66 b2 8e 64 d8 5d   .<9.N.+..Of..d.]
+    0020 - e2 96 02 8a e1 5c 70 9e-84 e2 3f 35 eb ee 9e b9   .....\p...?5....
+    0030 - 7d 05 ce e5 48 15 9c 20-95 df bc ec 90 95 91 84   }...H.. ........
+    0040 - 20 78 47 7c b2 f0 fb 65-34 14 a1 84 dc 06 02 0b    xG|...e4.......
+    0050 - 91 a8 88 2b 78 8f cb f5-13 12 eb eb 54 e9 6e b5   ...+x.......T.n.
+    0060 - c7 9b d1 4a f6 ed e9 b4-c2 8c 84 9a 91 f5 de 73   ...J...........s
+    0070 - 01 95 3c 4b 23 90 a9 10-61 50 4e ec f1 83 a9 55   ..<K#...aPN....U
+    0080 - 55 4a 19 aa 15 f5 73 25-33 6a fb 65 d8 c3 63 0d   UJ....s%3j.e..c.
+    0090 - 85 dd 3f 57 cf 85 33 78-cc 07 37 d9 21 da 37 ba   ..?W..3x..7.!.7.
+    00a0 - f9 df 8e 88 a6 73 11 40-79 c9 a2 48 78 19 b5 d4   .....s.@y..Hx...
+    00b0 - 4a e0 b5 77 3f f1 3a 69-db e8 50 f0 e8 d2 f6 c2   J..w?.:i..P.....
+    00c0 - 7c 4f ce 03 f4 1c 40 a3-d4 29 26 65 ef 3a cd ae   |O....@..)&e.:..
+
+    Start Time: 1744173416
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
+closed
